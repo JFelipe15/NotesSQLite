@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateNoteActivity">
+
+    <TextView
+        android:id="@+id/txtEditNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Edit Note"
+        android:textSize="24sp">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/btnSaveEditNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_done">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/edtEditTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter the title"
+        android:textSize="20sp"
+        android:layout_below="@+id/txtEditNote"
+        android:padding="12dp"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtEditContentNote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Enter description"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:background="@drawable/orange_border"
+        android:layout_below="@+id/edtEditTitle"
+        android:layout_marginTop="12dp"
+        >
+
+    </EditText>
+
+</RelativeLayout>
